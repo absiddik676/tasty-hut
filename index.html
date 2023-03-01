@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Hut</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li tabindex="0">
+                        <a class="justify-between">
+                          Parent
+                          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                        </a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-xl font-bold">Tasty HUT</a>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-yellow-400 text-black font-bold">Sign Up</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="h-screen  pt-20 bg-[url('./images/banner_1.png')] bg-cover mt-7 flex  items-center justify-center mix-blend-multiply bg-black ">
+            <div class="w-3/4 text-center">
+                <h1 class="text-white text-3xl lg:text-7xl font-semibold ">Taste Our Delicious <br> Best Foods</h1>
+                <p class="text-white text-1xl py-8 ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humou.</p>
+                <input class="px-2 lg:px-16 py-3 rounded-md" placeholder="search" type="text" name="" id="search"> <button onclick="searchMeal()" class="btn bg-yellow-400 text-black font-bold">search</button>
+            </div>
+        </section>
+
+  <section class="my-12">
+          <h1 class="text-3xl font-bold text-center mt-12 mb-12">Your Favourite Food</h1>
+
+          <div id="meal-container" class="grid lg:grid-cols-2 gap-5 px-10">
+            
+      
+            </div>
+            <!-- The button to open modal -->
+
+
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div id="modal" class="modal modal-bottom sm:modal-middle ">
+          
+        </div>
+
+</section>
+          <div class="text-center">
+            <a onclick="showAll()" class="btn mx-auto bg-yellow-400 text-black font-bold">Show All </a>
+          </div>
+  
+    </main>
+
+    <footer class="bg-amber-100 mt-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4 mx-4 lg:mx-14  pt-14">
+        <ul>
+          <li class="font-bold mb-5">Section</li>
+          <li class="mb-2">Home</li>
+          <li class="mb-2">Features</li>
+          <li class="mb-2">Pricing</li>
+          <li class="mb-2">FAQs</li>
+          <li class="mb-2">About</li>
+        </ul>
+        <ul>
+          <li class="font-bold mb-5">Section</li>
+          <li class="mb-2">UIUX Design</li>
+          <li class="mb-2">Product Design</li>
+          <li class="mb-2"> Back End Developer</li>
+          <li class="mb-2"> Front End Developer</li>
+        </ul>
+        <ul>
+          <li class="font-bold mb-5">Section</li>
+          <li class="mb-2">FAQ</li>
+          <li class="mb-2">Support</li>
+          <li class="mb-2">Terms of Service</li>
+          <li class="mb-2">Privacy Policy</li>
+        </ul>
+       <div>
+        <h1 class="font-bold mb-5">Subscribe to our newsletter</h1>
+        <p class="mb-5">There are many variations of passages of available, but the majority have suffered</p>
+        <input class="lg:px-3 py-3 rounded-md" placeholder="Email address" type="text" name="" id="search"> <button  class="btn bg-yellow-400 text-black font-bold mt-2 lg:mt-0">Subscribe</button>
+       </div>
+      </div>
+    </footer>
+
+
+    
+
+
+    
+   
+   
+    <script src="./js/index.js"></script>
+</body>
+</html> 
